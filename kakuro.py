@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 from parse import *
 from csp import *
 from utils import *
@@ -5,7 +7,7 @@ from csp_search import *
 
 
 #Change to appropriate puzzle!
-puzzle = puzzle3
+puzzle = puzzle0
 
 #Change to value: bt - btmrv - fc - fcmrv
 algorithm = "bt"
@@ -66,7 +68,7 @@ class Kakuro(CSP):
 		self.DomainDict = {}
 		for element in self.Variables:
 			self.DomainDict[element]=[]
-			for i in range(1,10):
+			for i in range(1,11):
 				self.DomainDict[element].append(i)
 				
 		#print self.DomainDict
